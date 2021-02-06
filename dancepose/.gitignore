@@ -1,0 +1,16 @@
+/.idea/
+.DS_Store
+src/.DS_Store
+src/main/.DS_Store
+src/main/java/.DS_Store
+src/main/java/dance/.DS_Store
+src/main/java/dance/ballroom/.DS_Store
+src/main/resources/
+src/test/.DS_Store
+src/test/java/.DS_Store
+src/test/java/dance/.DS_Store
+target/.DS_Store
+target/classes/
+target/generated-sources/
+target/generated-test-sources/
+target/test-classes/META-INF/
