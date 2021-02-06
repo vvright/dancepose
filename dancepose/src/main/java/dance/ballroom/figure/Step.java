@@ -2,10 +2,8 @@ package dance.ballroom.figure;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.stereotype.Component;
 
 @Data
-@Component
 @NoArgsConstructor
 public class Step {
     public String beat;//节拍

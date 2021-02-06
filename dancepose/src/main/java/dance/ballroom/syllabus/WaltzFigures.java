@@ -3,8 +3,6 @@ package dance.ballroom.syllabus;
 import dance.ballroom.choreography.WaltzFigureColor;
 import dance.ballroom.figure.Figure;
 import lombok.Data;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import java.util.HashSet;
@@ -15,148 +13,146 @@ import java.util.Set;
  * @description England Slow Waltz
  */
 @Data
-@Component
 public class WaltzFigures {
 
     /**
      * 1
      */
-    @Autowired
+
     public Figure Prep_Step;
 
     /**
      * PreBronze
      */
-    @Autowired
+
     public Figure RF_Closed_Change;
-    @Autowired
+
     public Figure LF_Closed_Change;
 
-    @Autowired
+
     public Figure Natural_Turn;
-    @Autowired
+
     public Figure Natural_Turn_1_3;
-    @Autowired
+
     public Figure Natural_Turn_4_6;
 
-    @Autowired
+
     public Figure Open_Natural_Turn;//CDSF Bronze
-    @Autowired
+
     public Figure Open_Natural_Turn_from_PP;//DTV
-    @Autowired
+
     public Figure Fallaway_Natural_Turn;//IDTA Gold
 
-    @Autowired
+
     public Figure Reverse_Turn;
-    @Autowired
+
     public Figure Reverse_Turn_1_3;
-    @Autowired
+
     public Figure Reverse_Turn_4_6;
 
-    @Autowired
+
     public Figure Natural_Spin_Turn;
-    @Autowired
+
     public Figure Underturned_Natural_Spin_Turn;//variation
-    @Autowired
+
     public Figure Quick_Natural_Spin_Turn;//IDTA Additional
 
-    @Autowired
+
     public Figure Whisk;
-    @Autowired
+
     public Figure Chasse_from_PP;//16
 
     /**
      * Bronze
      */
-    @Autowired
+
     public Figure Closed_Impetus;
-    @Autowired
+
     public Figure Hesitation_Change;
-    @Autowired
+
     public Figure Outside_Change;
-    @Autowired
+
     public Figure Outside_Change_to_PP;
-    @Autowired
+
     public Figure Reverse_Corte;
-    @Autowired
+
     public Figure Back_Whisk;
-    @Autowired
+
     public Figure Basic_Weave;
 
     /**
      * variation
      */
-    @Autowired
+
     public Figure Basic_Weave_to_PP;
 
 
-    @Autowired
     public Figure Double_Reverse_Spin;
-    @Autowired
+
     public Figure Reverse_Pivot;
-    @Autowired
+
     public Figure Back_Lock;
-    @Autowired
+
     public Figure Forward_Lock_Step;//IDTA
-    @Autowired
+
     public Figure Progressive_Chasse_to_Right;//29
 
     /**
      * Silver
      */
-    @Autowired
+
     public Figure Weave_from_PP;
-    @Autowired
+
     public Figure Weave_from_PP_ending_in_PP;//variation
-    @Autowired
+
     public Figure Closed_Telemark;
-    @Autowired
+
     public Figure Open_Telemark;
-    @Autowired
+
     public Figure Open_Impetus;
-    @Autowired
+
     public Figure Cross_Hesitation;
-    @Autowired
+
     public Figure Wing;
-    @Autowired
+
     public Figure Outside_Spin;
-    @Autowired
+
     public Figure Turning_Lock;
-    @Autowired
+
     public Figure Turning_Lock_ended_in_PP;
-    @Autowired
+
     public Figure Drag_Hesitation;
-    @Autowired
+
     public Figure Underturned_Outside_Spin;//41
 
     /**
      * Gold
      */
-    @Autowired
+
     public Figure Left_Whisk;
-    @Autowired
+
     public Figure Left_Whisk_from_PP;//variation
-    @Autowired
+
     public Figure Contra_Check;
-    @Autowired
+
     public Figure Closed_Wing;
-    @Autowired
+
     public Figure Turning_Lock_to_Right;
-    @Autowired
+
     public Figure Turning_Lock_to_Right_Closed;//variation
-    @Autowired
+
     public Figure Fallaway_Reverse_and_Slip_Pivot;
-    @Autowired
+
     public Figure Hover_Corte;
-    @Autowired
+
     public Figure Fallaway_Whisk;
-    @Autowired
+
     public Figure Running_Spin_Turn;//51
 
-    @Autowired
+
     public Set<Figure> figures;
 
-    @Autowired
+
     public WaltzFigures(WaltzFigureColor waltzFigureColor) {
         initWaltzFigures(waltzFigureColor);
 
@@ -168,7 +164,7 @@ public class WaltzFigures {
 //        ... ...
     }
 
-    @Autowired
+
     @PostConstruct
     private void initWaltzFigures(WaltzFigureColor waltzFigureColor) {
         setWaltzFigureColor(waltzFigureColor);
@@ -225,7 +221,7 @@ public class WaltzFigures {
         figures.add(Running_Spin_Turn);
     }
 
-    @Autowired
+
     private void setWaltzFigureColor(WaltzFigureColor waltzFigureColor) {
         waltzFigureColor.setStepColor_Red_Green(Prep_Step);
         waltzFigureColor.setStepColor_Green_Green(Natural_Turn);

@@ -1,9 +1,7 @@
 package dance.ballroom.figure;
 
 import dance.ballroom.choreography.BoxColor;
-import org.springframework.stereotype.Component;
 
-@Component
 public class PrepStep extends Figure {
 
     public PrepStep() {
