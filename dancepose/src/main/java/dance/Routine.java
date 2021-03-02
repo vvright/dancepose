@@ -5,12 +5,19 @@ import lombok.Data;
 
 import java.util.List;
 
+/**
+ * @author Song
+ */
 @Data
-public class Rootine {
-    //小节
+public class Routine {
+    /**
+     * 小节
+     */
     public Integer bar;
 
-    //"ABCD","ABC","AB","A"
+    /**
+     * "ABCD","ABC","AB","A"
+     */
     public String line;
 
     public List<Figure> figures;

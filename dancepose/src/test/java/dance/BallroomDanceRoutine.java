@@ -5,11 +5,11 @@ import lombok.Data;
 import java.util.Scanner;
 
 @Data
-class BallroomDanceRootine {
+class BallroomDanceRoutine {
 
-    public Rootine generateVienneseWaltzRootine(){
-        Rootine rootine = new Rootine();
-        return rootine;
+    public Routine generateVienneseWaltzRoutine(){
+        Routine routine = new Routine();
+        return routine;
     }
 
     public static void main(String[] args) {

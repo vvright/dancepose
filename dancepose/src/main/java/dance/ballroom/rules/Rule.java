@@ -4,8 +4,11 @@ import dance.ballroom.figures.Figure;
 
 import java.util.Set;
 
+/**
+ * @author Song
+ */
 public interface Rule {
-    public Set<Figure> precedingFigures(Figure figure);
+    Set<Figure> precedingFigures(Figure figure);
 
-    public Set<Figure> followingFigures(Figure figure);
+    Set<Figure> followingFigures(Figure figure);
 }

@@ -3,13 +3,27 @@ package dance.ballroom.figures;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * @author Song
+ */
+
 @Data
 @NoArgsConstructor
 public class FootStep {
-    public Integer beat;//节拍
+    /**
+     * 节拍
+     */
+    public Integer beat;
 
-    public String footstep;//步法foot position, position of feet
-    public String turn;//转度amount of turn
+    /**
+     * 步法foot position, position of feet
+     */
+    public String footstep;
+
+    /**
+     * 转度amount of turn
+     */
+    public String turn;
     public String alignment;
     public String moving;
 
@@ -18,7 +32,11 @@ public class FootStep {
     public String RiseAndFall;
     public String CBM;
     public String sway;
-    public String footwork;//脚法
+
+    /**
+     * 脚法
+     */
+    public String footwork;
 
     public String notes;
 }
