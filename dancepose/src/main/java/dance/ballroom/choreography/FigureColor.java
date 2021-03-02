@@ -1,6 +1,6 @@
 package dance.ballroom.choreography;
 
-import dance.ballroom.figure.Figure;
+import dance.ballroom.figures.Figure;
 
 public interface FigureColor {
     void setStepColor_Green_Green(Figure figure);

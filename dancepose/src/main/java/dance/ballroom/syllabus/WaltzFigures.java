@@ -1,7 +1,7 @@
 package dance.ballroom.syllabus;
 
 import dance.ballroom.choreography.WaltzFigureColor;
-import dance.ballroom.figure.Figure;
+import dance.ballroom.figures.Figure;
 import lombok.Data;
 
 import javax.annotation.PostConstruct;
@@ -297,7 +297,7 @@ public class WaltzFigures {
     }
 
     public Set<Figure> findFollowingFiguresByFigure(Figure figure) {
-        Set<Figure> followingFigures = new HashSet<>();
+        Set<Figure> followingFigures = new HashSet<Figure>();
         for (Figure f : figures) {
             //right box color is left box color of following figure
             if (figure.followingColor == f.color) {
@@ -308,7 +308,7 @@ public class WaltzFigures {
     }
 
     public Set<Figure> findPrecedingFiguresByFigure(Figure figure) {
-        Set<Figure> precedingFigures = new HashSet<>();
+        Set<Figure> precedingFigures = new HashSet<Figure>();
         for (Figure f : figures) {
             //left box color is right box color of preceding figure
             if (figure.color == f.followingColor) {

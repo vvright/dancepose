@@ -1,6 +1,6 @@
 package dance.ballroom.choreography;
 
-import dance.ballroom.figure.Figure;
+import dance.ballroom.figures.Figure;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
