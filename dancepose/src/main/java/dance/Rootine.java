@@ -1,12 +1,18 @@
 package dance;
 
+import dance.ballroom.figures.Figure;
 import lombok.Data;
+
+import java.util.List;
 
 @Data
 public class Rootine {
     //小节
-    private Integer bar;
+    public Integer bar;
 
     //"ABCD","ABC","AB","A"
-    private String line;
+    public String line;
+
+    public List<Figure> figures;
+
 }

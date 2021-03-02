@@ -20,7 +20,7 @@ public class NaturalTurn extends Figure {
         List<FootStep> footSteps = Lists.newArrayList();
 
         if(footSteps == null){
-
+            //TO DO
         }
         return footSteps;
     }
