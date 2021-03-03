@@ -29,14 +29,12 @@ public class NaturalTurn extends Figure {
     @Override
     public Set<String> getPrecedingFigures(){
         Set<String> precedingFigures = Sets.newHashSet();
-        //TODO
         precedingFigures.add("NaturalTurn");
         precedingFigures.add("ForwardChangeReverseToNatural");
         precedingFigures.add("NaturalFleckerl");
         //Preceding Step 4
         precedingFigures.add("BackwardChangeReverseToNatural");
-        //123
-        precedingFigures.add("NaturalFleckerl");
+        precedingFigures.add("NaturalFleckerl_123");
 
         return precedingFigures;
     }
@@ -44,7 +42,6 @@ public class NaturalTurn extends Figure {
     @Override
     public Set<String> getFollowingFigures(){
         Set<String> followingFigures = Sets.newHashSet();
-        //TODO
         followingFigures.add("NaturalTurn");
         followingFigures.add("ForwardChangeNaturalToReverse");
         //Following Step 3
@@ -55,7 +52,6 @@ public class NaturalTurn extends Figure {
     @Override
     public List<FootStep> getFootSteps(){
         List<FootStep> footSteps = Lists.newArrayList();
-        //TODO
         return footSteps;
     }
 

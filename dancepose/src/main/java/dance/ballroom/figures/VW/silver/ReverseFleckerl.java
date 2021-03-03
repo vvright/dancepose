@@ -15,38 +15,36 @@ import java.util.Set;
 @Data
 public class ReverseFleckerl extends Figure {
     public ReverseFleckerl() {
-
+        this.name = "Reverse Fleckerl";
+        this.level = "Gold";
+        this.beats = "123";
+        this.ManCommenceAlignment = "Commence Facing LOD";
+        this.LadyCcommenceAlignment = "Commence Backing DW";
     }
     @Override
     public Set<String> getPrecedingFigures(){
         Set<String> precedingFigures = Sets.newHashSet();
-        //TODO
-        precedingFigures.add("NaturalTurn");
-        precedingFigures.add("ForwardChangeReverseToNatural");
-        precedingFigures.add("NaturalFleckerl");
+        precedingFigures.add("ReverseTurn");
+        precedingFigures.add("ReverseFleckerl");
         //Preceding Step 4
-        precedingFigures.add("BackwardChangeReverseToNatural");
-        //123
-        precedingFigures.add("NaturalFleckerl");
-
+        precedingFigures.add("ReverseTurn_123");
         return precedingFigures;
     }
 
     @Override
     public Set<String> getFollowingFigures(){
         Set<String> followingFigures = Sets.newHashSet();
-        //TODO
-        followingFigures.add("NaturalTurn");
-        followingFigures.add("ForwardChangeNaturalToReverse");
+        followingFigures.add("ReverseTurn");
+        followingFigures.add("ReverseFleckerl");
+        followingFigures.add("ContraCheck");
         //Following Step 3
-        followingFigures.add("BackwardChangeNaturalToReverse");
+        followingFigures.add("ReverseTurn_456");
         return followingFigures;
     }
 
     @Override
     public List<FootStep> getFootSteps(){
         List<FootStep> footSteps = Lists.newArrayList();
-        //TODO
         return footSteps;
     }
 }

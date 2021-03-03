@@ -18,30 +18,28 @@ public class BackwardChangeNaturalToReverse extends Figure {
     public BackwardChangeNaturalToReverse() {
         this.name = "Backward Change Natural To Reverse";
         this.level = "Bronze";
+        this.beats = "123";
+        this.ManCommenceAlignment = "";
+        this.LadyCcommenceAlignment = "";
+        this.getPrecedingFigures();
+        this.getFollowingFigures();
     }
+
     @Override
     public Set<String> getPrecedingFigures(){
         Set<String> precedingFigures = Sets.newHashSet();
-        //TODO
-        precedingFigures.add("NaturalTurn");
-        precedingFigures.add("ForwardChangeReverseToNatural");
-        precedingFigures.add("NaturalFleckerl");
-        //Preceding Step 4
         precedingFigures.add("BackwardChangeReverseToNatural");
         //123
-        precedingFigures.add("NaturalFleckerl");
-
+        precedingFigures.add("NaturalTurn_123");
         return precedingFigures;
     }
 
     @Override
     public Set<String> getFollowingFigures(){
         Set<String> followingFigures = Sets.newHashSet();
-        //TODO
-        followingFigures.add("NaturalTurn");
-        followingFigures.add("ForwardChangeNaturalToReverse");
-        //Following Step 3
-        followingFigures.add("BackwardChangeNaturalToReverse");
+        followingFigures.add("BackwardChangeReverseToNatural");
+        //456
+        followingFigures.add("ReverseTurn_456");
         return followingFigures;
     }
 

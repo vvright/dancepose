@@ -15,19 +15,17 @@ import java.util.Set;
 @Data
 public class ContraCheck extends Figure {
     public ContraCheck() {
-
+        this.name = "Contra Check";
+        this.level = "Gold";
+        this.beats = "123";
+        this.ManCommenceAlignment = "Commence Facing LOD";
+        this.LadyCcommenceAlignment = "Commence Backing LOD";
     }
     @Override
     public Set<String> getPrecedingFigures(){
         Set<String> precedingFigures = Sets.newHashSet();
-        //TODO
-        precedingFigures.add("NaturalTurn");
-        precedingFigures.add("ForwardChangeReverseToNatural");
-        precedingFigures.add("NaturalFleckerl");
-        //Preceding Step 4
-        precedingFigures.add("BackwardChangeReverseToNatural");
-        //123
-        precedingFigures.add("NaturalFleckerl");
+        precedingFigures.add("ReverseTurn");
+        precedingFigures.add("ReverseFleckerl");
 
         return precedingFigures;
     }
@@ -35,18 +33,13 @@ public class ContraCheck extends Figure {
     @Override
     public Set<String> getFollowingFigures(){
         Set<String> followingFigures = Sets.newHashSet();
-        //TODO
-        followingFigures.add("NaturalTurn");
-        followingFigures.add("ForwardChangeNaturalToReverse");
-        //Following Step 3
-        followingFigures.add("BackwardChangeNaturalToReverse");
+        followingFigures.add("NaturalFleckerl");
         return followingFigures;
     }
 
     @Override
     public List<FootStep> getFootSteps(){
         List<FootStep> footSteps = Lists.newArrayList();
-        //TODO
         return footSteps;
     }
 }

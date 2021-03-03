@@ -17,6 +17,7 @@ public class ReverseTurn extends Figure {
     public ReverseTurn() {
         this.name = "Reverse Turn";
         this.level = "Bronze";
+        this.beats = "123456";
         this.ManCommenceAlignment = "Commence Facing DW";
         this.LadyCcommenceAlignment = "Commence Backing DW";
         this.notes ="1）May be overturned around a corner \n";
@@ -28,14 +29,12 @@ public class ReverseTurn extends Figure {
     @Override
     public Set<String> getPrecedingFigures(){
         Set<String> precedingFigures = Sets.newHashSet();
-        //TODO
         precedingFigures.add("ReverseTurn");
         precedingFigures.add("ForwardChangeNaturalToReverse");
         precedingFigures.add("ReverseFleckerl");
         //Preceding Step 4
         precedingFigures.add("BackwardChangeNaturalToReverse");
-        //123
-        precedingFigures.add("ReverseFleckerl");
+        precedingFigures.add("ReverseFleckerl_123");
 
         return precedingFigures;
     }
@@ -43,22 +42,19 @@ public class ReverseTurn extends Figure {
     @Override
     public Set<String> getFollowingFigures(){
         Set<String> followingFigures = Sets.newHashSet();
-        //TODO
         followingFigures.add("ReverseTurn");
         followingFigures.add("ForwardChangeReverseToNatural");
         followingFigures.add("ReverseFleckerl");
-        followingFigures.add("ContraCheck")
+        followingFigures.add("ContraCheck");
         //Following Step 3
         followingFigures.add("BackwardChangeReverseToNatural");
-        //456
-        followingFigures.add("ReverseFleckerl");
+        followingFigures.add("ReverseFleckerl_456");
         return followingFigures;
     }
 
     @Override
     public List<FootStep> getFootSteps(){
         List<FootStep> footSteps = Lists.newArrayList();
-        //TODO
         return footSteps;
     }
 }
