@@ -1,0 +1,64 @@
+package dance.ballroom.figures.VW.bronze;
+
+import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
+import dance.ballroom.figures.Figure;
+import dance.ballroom.figures.FootStep;
+import lombok.Data;
+
+import java.util.List;
+import java.util.Set;
+
+/**
+ * @author Song
+ */
+@Data
+public class ReverseTurn extends Figure {
+    public ReverseTurn() {
+        this.name = "Reverse Turn";
+        this.level = "Bronze";
+        this.ManCommenceAlignment = "Commence Facing DW";
+        this.LadyCcommenceAlignment = "Commence Backing DW";
+        this.notes ="1）May be overturned around a corner \n";
+        this.notes += "2)May be curved toward centre to follow with (Silver) Reverse Fleckerls or (Gold) Contra Check in the middle of the floor";
+        this.getPrecedingFigures();
+        this.getFollowingFigures();
+    }
+
+    @Override
+    public Set<String> getPrecedingFigures(){
+        Set<String> precedingFigures = Sets.newHashSet();
+        //TODO
+        precedingFigures.add("ReverseTurn");
+        precedingFigures.add("ForwardChangeNaturalToReverse");
+        precedingFigures.add("ReverseFleckerl");
+        //Preceding Step 4
+        precedingFigures.add("BackwardChangeNaturalToReverse");
+        //123
+        precedingFigures.add("ReverseFleckerl");
+
+        return precedingFigures;
+    }
+
+    @Override
+    public Set<String> getFollowingFigures(){
+        Set<String> followingFigures = Sets.newHashSet();
+        //TODO
+        followingFigures.add("ReverseTurn");
+        followingFigures.add("ForwardChangeReverseToNatural");
+        followingFigures.add("ReverseFleckerl");
+        followingFigures.add("ContraCheck")
+        //Following Step 3
+        followingFigures.add("BackwardChangeReverseToNatural");
+        //456
+        followingFigures.add("ReverseFleckerl");
+        return followingFigures;
+    }
+
+    @Override
+    public List<FootStep> getFootSteps(){
+        List<FootStep> footSteps = Lists.newArrayList();
+        //TODO
+        return footSteps;
+    }
+}

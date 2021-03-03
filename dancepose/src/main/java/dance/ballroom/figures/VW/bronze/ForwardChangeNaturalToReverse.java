@@ -1,4 +1,4 @@
-package dance.ballroom.figures.VW;
+package dance.ballroom.figures.VW.bronze;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
@@ -13,25 +13,11 @@ import java.util.Set;
  * @author Song
  */
 @Data
-public class NaturalTurn extends Figure {
-
-    public NaturalTurn() {
-        this.name = "Natural Turn";
+public class ForwardChangeNaturalToReverse extends Figure {
+    public ForwardChangeNaturalToReverse() {
+        this.name = "Forward Change Natural To Reverse";
         this.level = "Bronze";
-        this.beats = "123456";
-        this.footSteps = getFootSteps();
-        this.ManCommenceAlignment = "Commence facing DC";
-        this.LadyCcommenceAlignment = "Commence backing DC";
-        this.notes="May be overturned around a corner";
     }
-
-    @Override
-    public List<FootStep> getFootSteps(){
-        List<FootStep> footSteps = Lists.newArrayList();
-        //TODO
-        return footSteps;
-    }
-
     @Override
     public Set<String> getPrecedingFigures(){
         Set<String> precedingFigures = Sets.newHashSet();
@@ -41,8 +27,8 @@ public class NaturalTurn extends Figure {
         precedingFigures.add("NaturalFleckerl");
         //Preceding Step 4
         precedingFigures.add("BackwardChangeReverseToNatural");
-        precedingFigures.add("1-3NaturalFleckerl");
-
+        //123
+        precedingFigures.add("NaturalFleckerl");
 
         return precedingFigures;
     }
@@ -56,5 +42,12 @@ public class NaturalTurn extends Figure {
         //Following Step 3
         followingFigures.add("BackwardChangeNaturalToReverse");
         return followingFigures;
+    }
+
+    @Override
+    public List<FootStep> getFootSteps(){
+        List<FootStep> footSteps = Lists.newArrayList();
+        //TODO
+        return footSteps;
     }
 }
