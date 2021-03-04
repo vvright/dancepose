@@ -1,15 +1,19 @@
-package dance;
+package dance.ballroom.routine;
 
+import dance.ballroom.figures.Figure;
 import lombok.Data;
 
 import java.util.Scanner;
 
 @Data
-class BallroomDanceRoutine {
+class BallroomDanceRoutine extends Routine {
 
-    public Routine generateVienneseWaltzRoutine(){
-        Routine routine = new Routine();
-        return routine;
+    public Figure getPrecedingFigure(Figure figure){
+        return figure.getPrecedingFigure();
+    }
+
+    public Figure getFollowingFigure(Figure figure){
+        return figure.getFollowingFigure();
     }
 
     public static void main(String[] args) {
