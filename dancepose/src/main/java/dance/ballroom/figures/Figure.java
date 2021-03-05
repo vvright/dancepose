@@ -14,6 +14,8 @@ import java.util.Set;
 @Data
 public class Figure {
     public String name;
+    public String nameInEnglish;
+    public String nameInChinese;
     public String level;
 
     public String beats;

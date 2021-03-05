@@ -10,10 +10,11 @@ import java.util.Set;
  * @author Song
  */
 
-public class PrepStep extends Figure {
+public class PrepStep_VW extends Figure {
 
-    public PrepStep() {
-        this.name="Prep Step";
+    public PrepStep_VW() {
+        this.name="PrepStep";
+        this.nameInEnglish="Prep Step";
         this.level="PreBronze";
         this.beats = "123";
         this.ManCommenceAlignment = "";

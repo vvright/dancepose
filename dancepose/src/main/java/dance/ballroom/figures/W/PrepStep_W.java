@@ -12,10 +12,11 @@ import java.util.Set;
  * @author Song
  */
 
-public class PrepStep extends Figure {
+public class PrepStep_W extends Figure {
 
-    public PrepStep() {
-        this.name="Prep Step";
+    public PrepStep_W() {
+        this.name="PrepStep";
+        this.nameInEnglish="Prep Step";
         this.level="PreBronze";
         this.notes="Although it is possible to commence at other alignments, the alignment given in the charts is almost always used";
         this.setColor(BoxColor.Red);

@@ -1,11 +1,12 @@
 package dance.ballroom.routine;
 
 import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import dance.ballroom.figures.Figure;
-import dance.ballroom.figures.VW.PrepStep;
 import lombok.Data;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Song
@@ -17,16 +18,17 @@ public class Routine {
      */
     public Integer bars;
 
-    /**
-     * Dance Line "ABCD","ABC","AB","A"
-     */
-    public String line;
-
     public List<Figure> figures;
 
-    public Routine(){
+    /**
+     * Dance Line "A","AB","ABC","ABCD"
+     */
+    public Map<String,List<Figure>> line;
+
+
+    public Routine() {
+        this.bars = 0;
         this.figures = Lists.newLinkedList();
-        figures.add(new PrepStep());
     }
 
 }

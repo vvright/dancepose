@@ -15,7 +15,8 @@ import java.util.Set;
 @Data
 public class ForwardChangeReverseToNatural extends Figure {
     public ForwardChangeReverseToNatural() {
-        this.name = "Forward Change Reverse To Natural ";
+        this.name = "ForwardChangeReverseToNatural ";
+        this.nameInEnglish = "Forward Change Reverse To Natural ";
         this.level = "Bronze";
         this.beats = "123";
         this.ManCommenceAlignment = "";

@@ -15,7 +15,8 @@ import java.util.Set;
 @Data
 public class ContraCheck extends Figure {
     public ContraCheck() {
-        this.name = "Contra Check";
+        this.name = "ContraCheck";
+        this.nameInEnglish = "Contra Check";
         this.level = "Gold";
         this.beats = "123";
         this.ManCommenceAlignment = "Commence Facing LOD";

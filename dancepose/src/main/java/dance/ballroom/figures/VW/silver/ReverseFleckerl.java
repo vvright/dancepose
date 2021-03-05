@@ -15,7 +15,8 @@ import java.util.Set;
 @Data
 public class ReverseFleckerl extends Figure {
     public ReverseFleckerl() {
-        this.name = "Reverse Fleckerl";
+        this.name = "ReverseFleckerl";
+        this.nameInEnglish = "Reverse Fleckerl";
         this.level = "Gold";
         this.beats = "123";
         this.ManCommenceAlignment = "Commence Facing LOD";

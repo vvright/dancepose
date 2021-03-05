@@ -15,7 +15,8 @@ import java.util.Set;
 @Data
 public class ReverseTurn extends Figure {
     public ReverseTurn() {
-        this.name = "Reverse Turn";
+        this.name = "ReverseTurn";
+        this.nameInEnglish = "Reverse Turn";
         this.level = "Bronze";
         this.beats = "123456";
         this.ManCommenceAlignment = "Commence Facing DW";

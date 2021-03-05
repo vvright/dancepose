@@ -16,7 +16,8 @@ import java.util.Set;
 public class BackwardChangeNaturalToReverse extends Figure {
 
     public BackwardChangeNaturalToReverse() {
-        this.name = "Backward Change Natural To Reverse";
+        this.name = "BackwardChangeNaturalToReverse";
+        this.nameInEnglish = "Backward Change Natural To Reverse";
         this.level = "Bronze";
         this.beats = "123";
         this.ManCommenceAlignment = "";

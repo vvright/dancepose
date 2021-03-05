@@ -16,7 +16,8 @@ import java.util.Set;
 public class NaturalTurn extends Figure {
 
     public NaturalTurn() {
-        this.name = "Natural Turn";
+        this.name = "NaturalTurn";
+        this.nameInEnglish = "Natural Turn";
         this.level = "Bronze";
         this.beats = "123456";
         this.ManCommenceAlignment = "Commence Facing DC";

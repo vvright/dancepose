@@ -15,7 +15,8 @@ import java.util.Set;
 @Data
 public class NaturalFleckerl extends Figure {
     public NaturalFleckerl() {
-        this.name = "Natural Fleckerl";
+        this.name = "NaturalFleckerl";
+        this.nameInEnglish = "Natural Fleckerl";
         this.level = "Gold";
         this.beats = "123";
         this.ManCommenceAlignment = "Commence Facing Against LOD";
