@@ -6,34 +6,36 @@ import lombok.Data;
 
 import java.util.List;
 import java.util.Scanner;
-
+/**
+ * @author Song
+ */
 @Data
 class BallroomDanceRoutine extends Routine {
 
-    public Figure getPrecedingFigure(Figure figure) {
-        return figure.getPrecedingFigure();
-    }
-
-    public Figure getFollowingFigure(Figure figure) {
-        return figure.getFollowingFigure();
-    }
-
-    public Figure getLastFigure(Routine routine) {
-        List<Figure> figures = routine.getFigures();
-        Figure figure = new PrepStep_VW();
-        if (figures.size() != 0) {
-            figure = routine.getFigures().get(figures.size() - 1);
-        }
-        return figure;
-    }
-
     public List<Figure> addFigure(Routine routine, Figure figure) {
-
         routine.getFigures().add(figure);
         return routine.getFigures();
     }
 
+    public List<Figure> addPrecedingFigure(Routine routine,int index, Figure figure){
+        routine.getFigures().add(index, figure);
+        return routine.getFigures();
+    }
 
+    public List<Figure> addFollowingFigure(Routine routine,int index, Figure figure){
+        routine.getFigures().add(index+1,figure);
+        return routine.getFigures();
+    }
+
+    public List<Figure> updateSelectedFigure(Routine routine, int index, Figure figure){
+        routine.getFigures().set(index, figure);
+        return routine.getFigures();
+    }
+
+    public List<Figure> deleteSelectedFigure(Routine routine, int index){
+        routine.getFigures().remove(index);
+        return routine.getFigures();
+    }
 
     public static void main(String[] args) {
         System.out.println("======================");

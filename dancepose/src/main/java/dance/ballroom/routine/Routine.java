@@ -31,4 +31,11 @@ public class Routine {
         this.figures = Lists.newLinkedList();
     }
 
+    public Figure getPrecedingFigure(Figure figure) {
+        return figure.getPrecedingFigure();
+    }
+
+    public Figure getFollowingFigure(Figure figure) {
+        return figure.getFollowingFigure();
+    }
 }
