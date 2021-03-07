@@ -4,7 +4,7 @@ import dance.ballroom.figures.Figure;
 
 
 /**
- * @author touclick
+ * @author Song
  */
 public class FeatherFinish extends Figure {
 

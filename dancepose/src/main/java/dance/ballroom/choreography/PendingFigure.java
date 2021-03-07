@@ -1,4 +1,4 @@
-package dance.ballroom.routine;
+package dance.ballroom.choreography;
 
 import dance.ballroom.figures.Figure;
 
@@ -9,6 +9,6 @@ import dance.ballroom.figures.Figure;
 public class PendingFigure extends Figure {
     public PendingFigure() {
         this.name = "PendingFigure";
-        this.notes = "not a figure , just used for choreography";
+        this.notes = "not a figure , used for choreography";
     }
 }
