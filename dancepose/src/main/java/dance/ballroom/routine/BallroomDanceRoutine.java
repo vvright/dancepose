@@ -1,7 +1,6 @@
 package dance.ballroom.routine;
 
 import dance.ballroom.figures.Figure;
-import dance.ballroom.figures.VW.PrepStep_VW;
 import lombok.Data;
 
 import java.util.List;

@@ -12,9 +12,9 @@ import java.util.Set;
  * @author Song
  */
 
-public class PrepStep_W extends Figure {
+public class PrepStep4Waltz extends Figure {
 
-    public PrepStep_W() {
+    public PrepStep4Waltz() {
         this.name="PrepStep";
         this.nameInEnglish="Prep Step";
         this.level="PreBronze";
