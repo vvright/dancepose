@@ -13,8 +13,8 @@ import java.util.Set;
  * @author Song
  */
 @Data
-public class BackwardChangeReverseToNatural extends Figure {
-    public BackwardChangeReverseToNatural() {
+public class ClosedChangeBackwardReverseToNatural extends Figure {
+    public ClosedChangeBackwardReverseToNatural() {
         this.name = "BackwardChangeReverseToNatural";
         this.nameInEnglish = "Backward Change Reverse To Natural";
         this.level = "Bronze";

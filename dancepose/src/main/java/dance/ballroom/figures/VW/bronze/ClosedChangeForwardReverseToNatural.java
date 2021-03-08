@@ -13,11 +13,10 @@ import java.util.Set;
  * @author Song
  */
 @Data
-public class BackwardChangeNaturalToReverse extends Figure {
-
-    public BackwardChangeNaturalToReverse() {
-        this.name = "BackwardChangeNaturalToReverse";
-        this.nameInEnglish = "Backward Change Natural To Reverse";
+public class ClosedChangeForwardReverseToNatural extends Figure {
+    public ClosedChangeForwardReverseToNatural() {
+        this.name = "ForwardChangeReverseToNatural ";
+        this.nameInEnglish = "Forward Change Reverse To Natural ";
         this.level = "Bronze";
         this.beats = "123";
         this.ManCommenceAlignment = "";
@@ -25,29 +24,25 @@ public class BackwardChangeNaturalToReverse extends Figure {
         this.getPrecedingFigures();
         this.getFollowingFigures();
     }
-
     @Override
     public Set<String> getPrecedingFigures(){
         Set<String> precedingFigures = Sets.newHashSet();
-        precedingFigures.add("BackwardChangeReverseToNatural");
-        //123
-        precedingFigures.add("NaturalTurn_123");
+        precedingFigures.add("ReverseTurn");
+        precedingFigures.add("ForwardChangeNaturalToReverse");
         return precedingFigures;
     }
 
     @Override
     public Set<String> getFollowingFigures(){
         Set<String> followingFigures = Sets.newHashSet();
-        followingFigures.add("BackwardChangeReverseToNatural");
-        //456
-        followingFigures.add("ReverseTurn_456");
+        followingFigures.add("NaturalTurn");
+        followingFigures.add("ForwardChangeNaturalToReverse");
         return followingFigures;
     }
 
     @Override
     public List<FootStep> getFootSteps(){
         List<FootStep> footSteps = Lists.newArrayList();
-        //TODO
         return footSteps;
     }
 }

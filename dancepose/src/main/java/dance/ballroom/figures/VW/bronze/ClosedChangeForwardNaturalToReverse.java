@@ -13,8 +13,8 @@ import java.util.Set;
  * @author Song
  */
 @Data
-public class ForwardChangeNaturalToReverse extends Figure {
-    public ForwardChangeNaturalToReverse() {
+public class ClosedChangeForwardNaturalToReverse extends Figure {
+    public ClosedChangeForwardNaturalToReverse() {
         this.name = "ForwardChangeNaturalToReverse";
         this.nameInEnglish = "Forward Change Natural To Reverse";
         this.level = "Bronze";
