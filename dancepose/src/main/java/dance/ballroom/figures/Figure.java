@@ -5,6 +5,7 @@ import dance.ballroom.choreography.BoxColor;
 import lombok.Data;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -24,8 +25,10 @@ public class Figure {
 
     public String rotation;
 
-    public String ManCommenceAlignment;
-    public String LadyCommenceAlignment;
+    public String manCommenceAlignment;
+    public String manCommencePosition;
+    public String ladyCommenceAlignment;
+    public String ladyCommencePosition;
 
     public String commencedFacing;
     public String commencedPosition;
@@ -47,6 +50,17 @@ public class Figure {
 
     public Set<String> precedingFigures;
     public Set<String> followingFigures;
+
+    public Map<String,Set<String>> precedingFiguresWithAlignment;
+    public Map<String,Set<String>> followingFiguresWithAlignment;
+
+    public Set<String> findPrecedingFiguresByAlignment(String commencedFacing, Map<String, Set<String>> precedingFigures) {
+        return precedingFigures.get(commencedFacing);
+    }
+
+    public Set<String> findFollowingFiguresByAlignment(String endedFacing, Map<String, Set<String>> followingFigures) {
+        return followingFigures.get(endedFacing);
+    }
 
     public String notes;
 
