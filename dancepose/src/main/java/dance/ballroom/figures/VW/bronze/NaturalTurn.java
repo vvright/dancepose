@@ -21,7 +21,7 @@ public class NaturalTurn extends Figure {
         this.level = "Bronze";
         this.beats = "123456";
         this.ManCommenceAlignment = "Commence Facing DC";
-        this.LadyCcommenceAlignment = "Commence Backing DC";
+        this.LadyCommenceAlignment = "Commence Backing DC";
         this.notes="May be overturned around a corner";
         this.getPrecedingFigures();
         this.getFollowingFigures();

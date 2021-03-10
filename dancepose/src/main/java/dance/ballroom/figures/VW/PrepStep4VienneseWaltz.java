@@ -18,7 +18,7 @@ public class PrepStep4VienneseWaltz extends Figure {
         this.level="PreBronze";
         this.beats = "123";
         this.ManCommenceAlignment = "";
-        this.LadyCcommenceAlignment = "";
+        this.LadyCommenceAlignment = "";
         this.setColor(BoxColor.Red);
         this.setFollowingColor(BoxColor.Green);
     }

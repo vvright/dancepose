@@ -25,13 +25,13 @@ public class Figure {
     public String rotation;
 
     public String ManCommenceAlignment;
-    public String LadyCcommenceAlignment;
+    public String LadyCommenceAlignment;
 
-    public String commenceFacing;
-    public String commencePosition;
+    public String commencedFacing;
+    public String commencedPosition;
 
-    public String endFacing;
-    public String endPosition;
+    public String endedFacing;
+    public String endedPosition;
 
     /**
      * The left hand box shows the first step of the figure.

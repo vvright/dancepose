@@ -20,7 +20,7 @@ public class NaturalFleckerl extends Figure {
         this.level = "Gold";
         this.beats = "123";
         this.ManCommenceAlignment = "Commence Facing Against LOD";
-        this.LadyCcommenceAlignment = "Commence Facing LOD";
+        this.LadyCommenceAlignment = "Commence Facing LOD";
     }
     @Override
     public Set<String> getPrecedingFigures(){

@@ -20,7 +20,7 @@ public class ReverseTurn extends Figure {
         this.level = "Bronze";
         this.beats = "123456";
         this.ManCommenceAlignment = "Commence Facing DW";
-        this.LadyCcommenceAlignment = "Commence Backing DW";
+        this.LadyCommenceAlignment = "Commence Backing DW";
         this.notes ="1）May be overturned around a corner \n";
         this.notes += "2)May be curved toward centre to follow with (Silver) Reverse Fleckerls or (Gold) Contra Check in the middle of the floor";
         this.getPrecedingFigures();

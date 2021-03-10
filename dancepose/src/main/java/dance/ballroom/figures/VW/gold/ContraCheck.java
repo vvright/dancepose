@@ -20,7 +20,7 @@ public class ContraCheck extends Figure {
         this.level = "Gold";
         this.beats = "123";
         this.ManCommenceAlignment = "Commence Facing LOD";
-        this.LadyCcommenceAlignment = "Commence Backing LOD";
+        this.LadyCommenceAlignment = "Commence Backing LOD";
     }
     @Override
     public Set<String> getPrecedingFigures(){
