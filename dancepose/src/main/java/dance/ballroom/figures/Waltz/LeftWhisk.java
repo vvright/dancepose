@@ -1,4 +1,4 @@
-package dance.ballroom.figures.W;
+package dance.ballroom.figures.Waltz;
 
 import dance.ballroom.figures.Figure;
 
