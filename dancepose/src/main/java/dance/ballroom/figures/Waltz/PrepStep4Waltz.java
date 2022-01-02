@@ -17,8 +17,8 @@ public class PrepStep4Waltz extends Figure {
         this.nameInEnglish="Prep Step";
         this.level="PreBronze";
         this.notes="Although it is possible to commence at other alignments, the alignment given in the charts is almost always used";
-        this.setColor(BoxColor.Red);
-        this.setFollowingColor(BoxColor.Green);
+        this.setStepColor(BoxColor.Red);
+        this.setFollowingStepColor(BoxColor.Green);
     }
 
     @Override

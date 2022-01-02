@@ -19,8 +19,8 @@ public class ReverseFleckerl extends Figure {
         this.nameInEnglish = "Reverse Fleckerl";
         this.level = "Gold";
         this.beats = "123";
-        this.ManCommenceAlignment = "Commence Facing LOD";
-        this.LadyCommenceAlignment = "Commence Backing DW";
+        this.manCommenceAlignment = "Commence Facing LOD";
+        this.ladyCommenceAlignment = "Commence Backing DW";
     }
     @Override
     public Set<String> getPrecedingFigures(){

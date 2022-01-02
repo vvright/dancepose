@@ -19,8 +19,8 @@ public class ContraCheck extends Figure {
         this.nameInEnglish = "Contra Check";
         this.level = "Gold";
         this.beats = "123";
-        this.ManCommenceAlignment = "Commence Facing LOD";
-        this.LadyCommenceAlignment = "Commence Backing LOD";
+        this.manCommenceAlignment = "Commence Facing LOD";
+        this.ladyCommenceAlignment = "Commence Backing LOD";
     }
     @Override
     public Set<String> getPrecedingFigures(){

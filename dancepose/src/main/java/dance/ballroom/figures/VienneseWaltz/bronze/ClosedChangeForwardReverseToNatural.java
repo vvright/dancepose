@@ -19,8 +19,8 @@ public class ClosedChangeForwardReverseToNatural extends Figure {
         this.nameInEnglish = "Forward Change Reverse To Natural ";
         this.level = "Bronze";
         this.beats = "123";
-        this.ManCommenceAlignment = "";
-        this.LadyCommenceAlignment = "";
+        this.manCommenceAlignment = "";
+        this.ladyCommenceAlignment = "";
         this.getPrecedingFigures();
         this.getFollowingFigures();
     }

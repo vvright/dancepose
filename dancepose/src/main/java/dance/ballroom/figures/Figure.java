@@ -39,11 +39,11 @@ public class Figure {
     /**
      * The left hand box shows the first step of the figure.
      */
-    public BoxColor color;
+    public BoxColor stepColor;
     /**
      * The right hand box shows the first step of the following figure.
      */
-    public BoxColor followingColor;
+    public BoxColor followingStepColor;
 
     public Figure precedingFigure;
     public Figure followingFigure;

@@ -300,7 +300,7 @@ public class WaltzFigures {
         Set<Figure> followingFigures = new HashSet<Figure>();
         for (Figure f : figures) {
             //right box color is left box color of following figure
-            if (figure.followingColor == f.color) {
+            if (figure.followingStepColor == f.stepColor) {
                 followingFigures.add(f);
             }
         }
@@ -311,7 +311,7 @@ public class WaltzFigures {
         Set<Figure> precedingFigures = new HashSet<Figure>();
         for (Figure f : figures) {
             //left box color is right box color of preceding figure
-            if (figure.color == f.followingColor) {
+            if (figure.stepColor == f.followingStepColor) {
                 precedingFigures.add(f);
             }
         }

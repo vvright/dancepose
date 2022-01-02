@@ -22,7 +22,7 @@ class BallroomDanceRoutine extends Routine {
     }
 
     public List<Figure> addFollowingFigure(Routine routine,int index, Figure figure){
-        routine.getFigures().add(index+1,figure);
+        routine.getFigures().add(index,figure);
         return routine.getFigures();
     }
 
@@ -38,15 +38,35 @@ class BallroomDanceRoutine extends Routine {
 
     public static void main(String[] args) {
         System.out.println("======================");
-        System.out.println("Ballroom Dance Rootine");
+        System.out.println("Ballroom Dance Routine");
         System.out.println("======================");
 
+        System.out.println("Waltz");
+        System.out.println("Tango");
+        System.out.println("Quickstep");
+        System.out.println("Foxtrot");
+        System.out.println("VienneseWaltz");
+        System.out.println("Please input the type of ballroom dance:");
+
         Scanner cmdLine = new Scanner(System.in);
-        while (cmdLine.hasNext()) {
-            Integer bar = new Integer(cmdLine.next());
-            if (bar >= 1 && bar <= 32) {
-                System.out.println(bar);
-            }
+
+        String ballroomDanceType = cmdLine.next();
+        System.out.println(ballroomDanceType);
+
+        System.out.println("Please input bars of the routine:");
+        Integer bar = Integer.valueOf(cmdLine.next());
+
+        if (bar >= 1 && bar <= 32) {
+            System.out.println(bar);
         }
+
+
+        while (cmdLine.hasNext()) {
+           String figureName = cmdLine.next();
+//           Figure figure = new Figure(figureName);
+
+        }
+
+
     }
 }
