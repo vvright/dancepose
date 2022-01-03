@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @author Song
  */
 @Data
-class BallroomDanceRoutine extends Routine {
+class BallroomRoutine extends Routine {
 
     public List<Figure> addFigure(Routine routine, Figure figure) {
         routine.getFigures().add(figure);

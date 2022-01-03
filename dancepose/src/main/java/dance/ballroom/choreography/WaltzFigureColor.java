@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class WaltzFigureColor implements FigureColor {
 
-
     public void setStepColor_Green_Green(Figure figure) {
         figure.setStepColor(BoxColor.Green);
         figure.setFollowingStepColor(BoxColor.Green);

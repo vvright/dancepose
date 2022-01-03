@@ -1,4 +1,4 @@
-package dance.ballroom.figures.VienneseWaltz;
+package dance.ballroom.figures.Waltz;
 
 import com.google.common.collect.Sets;
 import dance.ballroom.choreography.BoxColor;
@@ -10,15 +10,13 @@ import java.util.Set;
  * @author Song
  */
 
-public class PrepStep4VienneseWaltz extends Figure {
+public class WaltzPrepStep extends Figure {
 
-    public PrepStep4VienneseWaltz() {
+    public WaltzPrepStep() {
         this.name="PrepStep";
         this.nameInEnglish="Prep Step";
         this.level="PreBronze";
-        this.beats = "123";
-        this.manCommenceAlignment = "";
-        this.ladyCommenceAlignment = "";
+        this.notes="Although it is possible to commence at other alignments, the alignment given in the charts is almost always used";
         this.setStepColor(BoxColor.Red);
         this.setFollowingStepColor(BoxColor.Green);
     }
@@ -26,7 +24,13 @@ public class PrepStep4VienneseWaltz extends Figure {
     @Override
     public Set<String> getFollowingFigures(){
         Set<String> followingFigures = Sets.newHashSet();
+        //Ended Facing DC
+        followingFigures.add("RFClosedChange");
+        //Ended Facing DW
         followingFigures.add("NaturalTurn");
+        followingFigures.add("NaturalSpinTurn");
+        followingFigures.add("HesitationChange");
+
         return followingFigures;
     }
 }
