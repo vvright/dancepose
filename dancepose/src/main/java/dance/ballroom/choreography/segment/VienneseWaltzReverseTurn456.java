@@ -1,4 +1,4 @@
-package dance.ballroom.figures.VienneseWaltz.bronze;
+package dance.ballroom.choreography.segment;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;

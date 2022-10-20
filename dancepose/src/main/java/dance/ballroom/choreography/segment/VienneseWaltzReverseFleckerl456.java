@@ -1,4 +1,4 @@
-package dance.ballroom.figures.VienneseWaltz.gold;
+package dance.ballroom.choreography.segment;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
@@ -14,32 +14,36 @@ import java.util.Set;
  * @author Song
  */
 @Data
-public class VienneseWaltzNaturalFleckerl456 extends Figure {
-    public VienneseWaltzNaturalFleckerl456() {
+public class VienneseWaltzReverseFleckerl456 extends Figure {
+    public VienneseWaltzReverseFleckerl456() {
         this.stepColor = BoxColor.Green;
         this.followingStepColor = BoxColor.Green;
 
-        this.name = "NaturalFleckerl";
-        this.nameInEnglish = "Natural Fleckerl";
+        this.name = "ReverseFleckerl";
+        this.nameInEnglish = "Reverse Fleckerl";
         this.level = "Gold";
         this.beats = "123";
-        this.manCommenceAlignment = "Commence Facing Against LOD";
-        this.ladyCommenceAlignment = "Commence Facing LOD";
+        this.manCommenceAlignment = "Commence Facing LOD";
+        this.ladyCommenceAlignment = "Commence Backing DW";
     }
     @Override
     public Set<String> getPrecedingFigures(){
         Set<String> precedingFigures = Sets.newHashSet();
-//        precedingFigures.add("NaturalFleckerl");
-//        precedingFigures.add("ContraCheck");
+//        precedingFigures.add("ReverseTurn");
+//        precedingFigures.add("ReverseFleckerl");
+//        //Preceding Step 4
+//        precedingFigures.add("ReverseTurn_123");
         return precedingFigures;
     }
 
     @Override
     public Set<String> getFollowingFigures(){
         Set<String> followingFigures = Sets.newHashSet();
-//        followingFigures.add("NaturalTurn");
+//        followingFigures.add("ReverseTurn");
+//        followingFigures.add("ReverseFleckerl");
+//        followingFigures.add("ContraCheck");
 //        //Following Step 3
-//        followingFigures.add("NaturalTurn_456");
+//        followingFigures.add("ReverseTurn_456");
         return followingFigures;
     }
 

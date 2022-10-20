@@ -1,4 +1,4 @@
-package dance.ballroom.figures.VienneseWaltz.gold;
+package dance.ballroom.choreography.segment;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
@@ -14,8 +14,8 @@ import java.util.Set;
  * @author Song
  */
 @Data
-public class VienneseWaltzNaturalFleckerl123 extends Figure {
-    public VienneseWaltzNaturalFleckerl123() {
+public class VienneseWaltzNaturalFleckerl456 extends Figure {
+    public VienneseWaltzNaturalFleckerl456() {
         this.stepColor = BoxColor.Green;
         this.followingStepColor = BoxColor.Green;
 

@@ -1,4 +1,4 @@
-package dance.ballroom.figures.VienneseWaltz.bronze;
+package dance.ballroom.choreography.segment;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
@@ -14,16 +14,16 @@ import java.util.Set;
  * @author Song
  */
 @Data
-public class VienneseWaltzNaturalTurn456 extends Figure {
+public class VienneseWaltzNaturalTurn123 extends Figure {
 
-    public VienneseWaltzNaturalTurn456() {
+    public VienneseWaltzNaturalTurn123() {
         this.stepColor = BoxColor.Green;
-        this.followingStepColor = BoxColor.Green;
+        this.followingStepColor = BoxColor.TwillRed;
 
         this.name = "NaturalTurn";
         this.nameInEnglish = "Natural Turn";
         this.level = "Bronze";
-        this.beats = "123456";
+        this.beats = "123";
         this.manCommenceAlignment = "Commence Facing DC";
         this.ladyCommenceAlignment = "Commence Backing DC";
         this.notes="May be overturned around a corner";
